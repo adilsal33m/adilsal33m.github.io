@@ -202,6 +202,14 @@ html {
     display: table;
 }
 
+table thead{
+    background-color: #8cdba9;
+}
+
+table {
+    text-align: center;
+}
+
 .menu:after {
     clear: both;
 }
