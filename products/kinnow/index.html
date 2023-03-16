@@ -1,0 +1,136 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinnow Editor</title>
+
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
+
+</head>
+
+<body class="bg-gray-800">
+  <div class="flex flex-col md:flex-row bg-gray-800 container pt-12 ">
+    <!-- Left column for title and caption -->
+    <div class="md:w-1/2 flex flex-col justify-center px-6 py-16">
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight text-white mb-4">
+        <span class="text-orange-400">Kinnow</span> Editor
+      </h1>
+      <p class="text-xl md:text-2xl text-white mb-8">
+        A modern and easy-to-use image editor when you need finer control
+      </p>
+    </div>
+    <!-- Right column for image -->
+    <div class="md:w-1/2 h-full">
+      <img class="h-full object-contain object-center p-8 m-auto" src="img/hero_image.png" alt="Mobile Phone" />
+    </div>
+  </div>
+  <div class="py-12 "></div>
+  <div class="container bg-gray-800">
+    <p class="font-bold text-4xl text-orange-400 my-8 text-center">Features</p>
+    <div class="slider text-left max-h-[80vh]">
+      <!-- Slide 1 -->
+      <div>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div>
+            <p class="text-4xl text-orange-400 mt-4 md:mt-16">Work with Ply</p>
+            <p class="text-xl md:text-2xl text-white mt-4">
+              Working with multiple object is easier with ply.<br> Rearrange them.<br> Lock Them.<br> Delete Them.<br>
+              With Ease.
+            </p>
+          </div>
+          <div class="max-h-[80vh]">
+            <img class="h-full object-contain object-center m-auto p-16" src="img/ply_image.png" alt="Mobile Phone" />
+          </div>
+        </div>
+      </div>
+      <!-- Slide 1 - End -->
+      <!-- Slide 2 -->
+      <div>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div>
+            <p class="text-4xl text-orange-400 mt-4 md:mt-16">Transformation with Gestures</p>
+            <p class="text-xl md:text-2xl text-white mt-4">
+              Transform the ply with familiar gestures.<br>
+              Pan to Move <br>
+              Pinch to Scale <br>
+              Twist to Rotate <br>
+            </p>
+          </div>
+          <div class="max-h-screen">
+            <video class="h-full object-contain object-center m-auto p-16" controls autoplay>
+              <source src="img/transform_video.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 - End -->
+    </div>
+    <div id="controls">
+      <button class="previous">prev</button>
+      <button class="next">next</button>
+    </div>
+  </div>
+  <div class="py-12 "></div>
+  <div class="container mx-auto">
+    <p class="text-center text-4xl font-bold text-orange-400">Feedback</p>
+    <form class="shadow-md rounded px-8 pt-6 pb-8 mb-4" action="mailto:info@sigmolabs.com?subject=Kinnow Editor"
+      method="post" enctype="text/plain">
+      <div class="mb-4">
+        <label class="block text-white font-bold mb-2" for="name">
+          Name
+        </label>
+        <input
+          class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          name="name" type="text" placeholder="Your Name">
+      </div>
+      <div class="mb-4">
+        <label class="block text-white font-bold mb-2" for="email">
+          Email
+        </label>
+        <input
+          class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          name="email" type="email" placeholder="Your Email">
+      </div>
+      <div class="mb-4">
+        <label class="block text-white font-bold mb-2" for="comment">
+          Comment
+        </label>
+        <textarea
+          class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          name="comment" rows="5" placeholder="Enter your comment"></textarea>
+      </div>
+      <div class="mb-4">
+        <button
+          class="bg-orange-500 hover:bg-orange-400 text-white font-bold py-2 px-4 w-full rounded focus:outline-none focus:shadow-outline"
+          type="submit">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  <footer class="bg-gray-800 text-gray-300 bottom-0 fixed w-screen">
+    <p class="text-center">&copy; 2023 Kinnow. All Rights Reserved.</p>
+  </footer>
+</body>
+<script>
+  var slider = tns({
+    container: '.slider',
+    items: 1,
+    slideBy: 'page',
+    autoplay: true,
+    controls: true,
+    mouseDrag: true,
+    controlsContainer: '#controls',
+    prevButton: '.previous',
+    nextButton: '.next',
+    nav: false,
+  });
+</script>
+
+</html>
