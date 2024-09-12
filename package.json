@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.11"
+  },
+  "dependencies": {
+    "alpinejs": "^3.14.1",
+    "aos": "^2.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.45"
+  },
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css"
+  }
+}

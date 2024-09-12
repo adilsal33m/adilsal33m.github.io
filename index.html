@@ -1,482 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{ tab: 'academia' }" x-cloak>
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
-
-  <title>Adil Saleem</title>
-  <!--
-Reflux Template
-https://templatemo.com/tm-531-reflux
--->
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Additional CSS Files -->
-  <link rel="stylesheet" href="assets/css/fontawesome.css" />
-  <link rel="stylesheet" href="assets/css/templatemo-style.css" />
-  <link rel="stylesheet" href="assets/css/owl.css" />
-  <link rel="stylesheet" href="assets/css/lightbox.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Career Overview</title>
+  <link href="src/output.css" rel="stylesheet">
+  <link href="node_modules/aos/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
-  <div id="page-wraper">
-    <!-- Sidebar Menu -->
-    <div class="responsive-nav">
-      <i class="fa fa-bars" id="menu-toggle"></i>
-      <div id="menu" class="menu">
-        <i class="fa fa-times" id="menu-close"></i>
-        <div class="container">
-          <div class="image">
-            <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
-          </div>
-          <div class="author-content">
-            <h4>adil saleem</h4>
-            <span>developer . student</span>
-            <p></p>
-            <p>adilsaleem.92@gmail.com</p>
-            <p>+92 312 2061446</p>
-          </div>
-          <nav class="main-nav" role="navigation">
-            <ul class="main-menu">
-              <li><a href="#section1">About Me</a></li>
-              <li><a href="#section2">What I’m good at</a></li>
-              <li><a href="#section3">My Work</a></li>
-              <li><a href="#section4">Contact Me</a></li>
-            </ul>
-          </nav>
-          <div class="social-network">
-            <ul class="soial-icons">
-              <li>
-                <a href="https://fb.com/adil.saleem.92"><i class="fa fa-facebook"></i></a>
-              </li>
+<body class="bg-white text-black font-sans">
 
-              <li>
-                <a href="https://www.linkedin.com/in/adil-saleem-347608b3"><i class="fa fa-linkedin"></i></a>
-              </li>
+  <header class="bg-black text-white p-4">
+    <h1 class="text-lg sm:text-3xl font-light text-center uppercase tracking-wider">Muhammad Adil Saleem</h1>
+  </header>
 
+  <div class="max-w-2xl mx-auto mt-6 px-4">
+    <div class="flex-wrap flex text-center w-full space-x-4 mb-6">
+      <button x-on:click="tab = 'academia'"
+        :class="{ 'bg-black text-white': tab === 'academia', 'bg-gray-200': tab !== 'academia' }"
+        class="tab-button py-2 px-4 rounded shadow-md">Academia</button>
+      <button x-on:click="tab = 'professional'"
+        :class="{ 'bg-black text-white': tab === 'professional', 'bg-gray-200': tab !== 'professional' }"
+        class="tab-button py-2 px-4 rounded shadow-md">Professional</button>
+      <button x-on:click="tab = 'projects'"
+        :class="{ 'bg-black text-white': tab === 'projects', 'bg-gray-200': tab !== 'projects' }"
+        class="tab-button py-2 px-4 rounded shadow-md">Projects</button>
+    </div>
+
+    <div x-show="tab === 'academia'" data-aos="fade-up" class="tab-content" x-transition>
+      <h2 class="text-2xl font-semibold mb-4 uppercase text-xs tracking-wider">Academic Career</h2>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold mb-2">Degrees</h3>
+        <ul class="list-disc list-inside">
+          <li>
+            <strong>PhD in Computer Science</strong>, University Name (Year)
+            <ul class="list-disc list-inside pl-4">
+              <li>Research on <em>XYZ</em></li>
+              <li>Advisor: Dr. Name</li>
+              <li>Thesis Title: <em>Title of Thesis</em></li>
             </ul>
-          </div>
-          <div class="copyright-text">
-            <p>Copyright 2019 Reflux Design</p>
-          </div>
-        </div>
+          </li>
+          <li>
+            <strong>Master's in Data Science</strong>, University Name (Year)
+            <ul class="list-disc list-inside pl-4">
+              <li>Thesis on <em>ABC</em></li>
+              <li>Advisor: Dr. Name</li>
+              <li>Thesis Title: <em>Title of Thesis</em></li>
+            </ul>
+          </li>
+          <li>
+            <strong>Bachelor's in Software Engineering</strong>, University Name (Year)
+          </li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold mb-2">Research Interests</h3>
+        <p>
+          My research interests include but are not limited to:
+        </p>
+        <ul class="list-disc list-inside pl-4">
+          <li>Artificial Intelligence and Machine Learning</li>
+          <li>Data Mining and Predictive Analytics</li>
+          <li>Software Engineering and Development Practices</li>
+          <li>Human-Computer Interaction</li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold mb-2">Publications</h3>
+        <ul class="list-disc list-inside pl-4">
+          <li><a href="URL-to-publication" class="text-blue-500">Title of Publication</a> - Journal/Conference Name
+            (Year)</li>
+          <li><a href="URL-to-publication" class="text-blue-500">Title of Publication</a> - Journal/Conference Name
+            (Year)</li>
+          <!-- Add more publications as needed -->
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold mb-2">Conferences and Workshops</h3>
+        <ul class="list-disc list-inside pl-4">
+          <li>Presented at <strong>Conference Name</strong> (Year) - <em>Title of Presentation</em></li>
+          <li>Attended <strong>Workshop Name</strong> (Year) - <em>Workshop Focus</em></li>
+          <!-- Add more conferences and workshops as needed -->
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold mb-2">Awards and Honors</h3>
+        <ul class="list-disc list-inside pl-4">
+          <li><strong>Award Name</strong> (Year) - Description of the award or honor.</li>
+          <li><strong>Scholarship Name</strong> (Year) - Description of the scholarship or honor.</li>
+          <!-- Add more awards and honors as needed -->
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold mb-2">Teaching Experience</h3>
+        <ul class="list-disc list-inside pl-4">
+          <li><strong>Course Name</strong>, University Name (Year) - Role (e.g., Teaching Assistant, Lecturer)</li>
+          <li><strong>Course Name</strong>, University Name (Year) - Role (e.g., Teaching Assistant, Lecturer)</li>
+          <!-- Add more teaching experience as needed -->
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold mb-2">Professional Development</h3>
+        <ul class="list-disc list-inside pl-4">
+          <li>Completed <strong>Certification Name</strong> (Year) - Description of the certification.</li>
+          <li>Participated in <strong>Training Program</strong> (Year) - Description of the program.</li>
+          <!-- Add more professional development activities as needed -->
+        </ul>
       </div>
     </div>
 
-    <section class="section about-me" data-section="section1">
-      <div class="container">
-        <div class="section-heading">
-          <h2>About Me</h2>
-          <div class="line-dec"></div>
-          <span>Hi! I am Adil Saleem. I am 29 years old living in Karachi, Pakistan. I am passionate about development
-            and anything that mildly piques my interest.
-            I am also pursuing my PhD degree in Computer Science from IBA Karachi. </span>
-        </div>
-        <div class="section-heading">
-          <h2>Experience</h2>
-          <div class="line-dec"></div>
-          <div class="table-responsive">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Title</th>
-                  <th scope="col">Company</th>
-                  <th scope="col">Duration</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Mobile App Developer</td>
-                  <td>Pakistan Data Management Services</td>
-                  <td>August 2020 - July 2021</td>
-                </tr>
-                <tr>
-                  <td>IT Business Partner</td>
-                  <td>Unilever Pakistan</td>
-                  <td>April 2019 - August 2020</td>
-                </tr>
-                <tr>
-                  <td>Mobile App Developer</td>
-                  <td>Pakistan Data Management Services</td>
-                  <td>Nov 2016 - March 2019</td>
-                </tr>
 
-              </tbody>
-            </table>
-          </div>
-        </div>
+    <div x-show="tab === 'professional'" data-aos="fade-up" class="tab-content" x-transition>
+      <h2 class="text-2xl font-semibold mb-4 uppercase text-xs tracking-wider">Professional Career</h2>
+      <ul class="list-none list-inside">
+        <li class="my-4">
+          <div class="font-bold">Freelancer</div>
+          <div class="font-semibold text-xs uppercase tracking-wider">Aug 2021 – Present</div>
+          <p>Developed various software solutions for clients.</p>
+        </li>
+        <li class="my-4">
+          <div class="font-bold">Pakistan Data Management Services</div>
+          <div class="font-semibold">iOS Developer</div>
+          <div class="text-xs uppercase tracking-wider">Aug 2020 – Jul 2021</div>
+          <ul>
+            <li>Developed high-quality iOS applications using Swift.</li>
+            <li>Collaborated with cross-functional teams to design, develop, and deploy new features.</li>
+            <li>Ensured application bug-free status and compatibility with latest iOS versions.</li>
+          </ul>
+        </li>
+        <li class="my-4">
+          <div class="font-bold">Unilever Pakistan</div>
+          <div class="font-semibold">IT Business Partner</div>
+          <div class="text-xs uppercase tracking-wider">Apr 2019 – Jul 2020</div>
+          <ul>
+            <li>Provided technical expertise and support to HR and Supply Chain teams.</li>
+            <li>Developed and implemented IT solutions aligned with business objectives.</li>
+            <li>Ensured optimal functioning of existing business applications.</li>
+          </ul>
+        </li>
+        <li class="my-4">
+          <div class="font-bold">Pakistan Data Management Services</div>
+          <div class="font-semibold">Mobile App Developer</div>
+          <div class="text-xs uppercase tracking-wider">Nov 2017 – Mar 2019</div>
+          <ul>
+            <li>Developed and maintained Android applications using Java.</li>
+            <li>Collaborated with cross-functional teams for design, development, and deployment.</li>
+            <li>Optimized applications for performance and user experience.</li>
+          </ul>
+        </li>
+        <li class="my-4">
+          <div class="font-bold">University of Karachi</div>
+          <div class="font-semibold">Co-operative Teacher</div>
+          <div class="text-xs uppercase tracking-wider">Aug 2016 – Jul 2017</div>
+          <ul>
+            <li>Taught lab courses for Advanced Telecommunications and Industrial Electronics.</li>
+            <li>Provided feedback to students to enhance subject understanding.</li>
+          </ul>
+        </li>
+        <li class="my-4">
+          <div class="font-bold">SGS Pakistan</div>
+          <div class="font-semibold">Co-operative Teacher</div>
+          <div class="text-xs uppercase tracking-wider">May 2015 – Apr 2016</div>
+          <ul>
+            <li>Ensured compliance with regulatory and industry standards in oil, gas, and power generation sectors.
+            </li>
+            <li>Conducted inspections and tests using non-destructive testing methods.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-        <div class="section-heading">
-          <h2>Education</h2>
-          <div class="line-dec"></div>
-          <div class="table-responsive">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Degree</th>
-                  <th scope="col">School</th>
-                  <th scope="col">Duration</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>PhD (Computer Science)</td>
-                  <td>Institute of Business Admnistration, Karachi</td>
-                  <td>August 2021 - Present</td>
-                </tr>
-                <tr>
-                  <td>MS (Computer Science)</td>
-                  <td>Institute of Business Admnistration, Karachi</td>
-                  <td>August 2016 - July 2018</td>
-                </tr>
-                <tr>
-                  <td>MSc. (Applied Physics)</td>
-                  <td>University of Karachi</td>
-                  <td>January 2014 - December 2014</td>
-                </tr>
-                <tr>
-                  <td>BSc. (Hons)</td>
-                  <td>University of Karachi</td>
-                  <td>January 2011 - December 2013</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div x-show="tab === 'projects'" data-aos="fade-up" class="tab-content" x-transition>
+      <h2 class="text-2xl font-semibold mb-4 uppercase text-xs tracking-wider">Personal/Work Projects</h2>
+      <ul class="list-none list-inside">
+        <!-- Web Projects -->
+        <li class="my-4">
+          <div class="font-bold text-lg">Web Projects</div>
+          <ul class="list-disc list-inside ml-6">
+            <li class="font-semibold">
+              <span class="text-blue-500">Project Title 1</span>
+              - A web application for managing personal tasks with real-time collaboration features.
+            </li>
+            <li class="font-semibold">
+              <span class="text-blue-500">Project Title 2</span>
+              - An e-commerce website with integrated payment gateways and user authentication.
+            </li>
+            <!-- Add more web projects here -->
+          </ul>
+        </li>
 
-    <section class="section my-services" data-section="section2">
-      <div class="container">
-        <div class="section-heading">
-          <h2>What I’m good at?</h2>
-          <div class="line-dec"></div>
-          <span>Not to brag but I must say that I feel confident while working with the following technologies</span>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="first-service-icon service-icon"></div>
-              <h4>Web Development</h4>
-              <p>
-                I am pretty good at web development using Laravel. I can do enough front end development to make full
-                fledged apps.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="second-service-icon service-icon"></div>
-              <h4>Android Development</h4>
-              <p>
-                I have also built Android applications using Java. I am yet to climb the Kotlin bandwagon - that is
-                definitely going to be the next step.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="third-service-icon service-icon"></div>
-              <h4>iOS Development</h4>
-              <p>
-                I have worked on a few iOS applications as well. I am proficient with Swift but I can manage Objective C
-                codebases too.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="fourth-service-icon service-icon"></div>
-              <h4>AI/ML Projects</h4>
-              <p>
-                As part of my PhD, I am very comfortable working on AI and ML projects. Python is my tool of choice for
-                these projects.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- AI/ML Projects -->
+        <li class="my-4">
+          <div class="font-bold text-lg">AI/ML Projects</div>
+          <ul class="list-disc list-inside ml-6">
+            <li class="font-semibold">
+              <span class="text-green-500">Project Title 1</span>
+              - A machine learning model for predicting stock prices using historical data.
+            </li>
+            <li class="font-semibold">
+              <span class="text-green-500">Project Title 2</span>
+              - An image classification tool using deep learning algorithms for medical diagnostics.
+            </li>
+            <!-- Add more AI/ML projects here -->
+          </ul>
+        </li>
 
-    <section class="section my-work" data-section="section3">
-      <div class="container">
-        <div class="section-heading">
-          <h2>My Work</h2>
-          <div class="line-dec"></div>
-          <span>Here is the highlights of the projects I have done so far. I have worked solo on most of these projects
-            but for some, they either belong to the company I worked at or was completed in collaboration with other
-            developers.</span>
-        </div>
-        <div class="row">
-          <div class="isotope-wrapper">
-            <form class="isotope-toolbar">
-              <!-- <label><input type="radio" data-type="*" checked="" name="isotope-filter" />
-                <span>all</span></label> -->
-              <label><input type="radio" data-type="web" name="isotope-filter" checked="" />
-                <span>Web Dev</span></label>
-              <label><input type="radio" data-type="android" name="isotope-filter" />
-                <span>Android</span></label>
-              <label><input type="radio" data-type="ios" name="isotope-filter" />
-                <span>iOS</span></label>
-              <label><input type="radio" data-type="python" name="isotope-filter" />
-                <span>Python</span></label>
-            </form>
-            <div class="isotope-box">
-              <div class="isotope-item" data-type="web">
-                <figure class="snip1321">
-                  <img src="assets/images/apps/The Future Power/Dashboard.png" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/apps/The Future Power/Dashboard.png" data-lightbox="image-1"
-                      data-title="Schedule manager developed for TheFuturePower"><i class="fa fa-search"></i></a>
-                    <h4>Cleaning Schedule Manager</h4>
-                    <span>Schedule manager developed for TheFuturePower</span>
-                  </figcaption>
-                </figure>
-              </div>
+        <!-- Mobile Projects -->
+        <li class="my-4">
+          <div class="font-bold text-lg">Mobile Projects</div>
+          <ul class="list-disc list-inside ml-6">
+            <li class="font-semibold">
+              <span class="text-red-500">Project Title 1</span>
+              - A fitness tracking app with integration to various health data sources.
+            </li>
+            <li class="font-semibold">
+              <span class="text-red-500">Project Title 2</span>
+              - A travel itinerary app with offline support and customizable travel plans.
+            </li>
+            <!-- Add more mobile projects here -->
+          </ul>
+        </li>
 
-              <div class="isotope-item" data-type="web">
-                <figure class="snip1321">
-                  <img src="assets/images/apps/YMPK DMS/Dashboard.png" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/apps/YMPK DMS/Dashboard.png" data-lightbox="image-1" data-title="Distributor management system developed for Yamaha Pakistan"><i
-                        class="fa fa-search"></i></a>
-                    <h4>YMPK DMS</h4>
-                    <span>Distributor management system developed for Yamaha Pakistan</span>
-                  </figcaption>
-                </figure>
-              </div>
+        <!-- IoT Projects -->
+        <li class="my-4">
+          <div class="font-bold text-lg">IoT Projects</div>
+          <ul class="list-disc list-inside ml-6">
+            <li class="font-semibold">
+              <span class="text-purple-500">Project Title 1</span>
+              - A smart home system for controlling appliances remotely via a mobile app.
+            </li>
+            <li class="font-semibold">
+              <span class="text-purple-500">Project Title 2</span>
+              - An IoT-based environmental monitoring system with real-time data visualization.
+            </li>
+            <!-- Add more IoT projects here -->
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-              <div class="isotope-item" data-type="web">
-                <figure class="snip1321">
-                  <img src="assets/images/apps/Booking Management System/Events View.png" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/apps/Booking Management System/Events View.png" data-lightbox="image-1"
-                      data-title="A simple calendar based booking management system"><i class="fa fa-search"></i></a>
-                    <h4>Booking Management System</h4>
-                    <span>A simple calendar based booking management system</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="isotope-item" data-type="web">
-                <figure class="snip1321">
-                  <img src="assets/images/apps/UTIP/Dashboard.png" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/apps/UTIP/Dashboard.png" data-lightbox="image-1"
-                      data-title="An app to overlook logistics operation for Unilever Pakistan"><i
-                        class="fa fa-search"></i></a>
-                    <h4>Unilever Transport Inbound Portal</h4>
-                    <span>An app to overlook logistics operation for Unilever Pakistan</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="isotope-item" data-type="web">
-                <figure class="snip1321">
-                  <img src="assets/images/apps/Health Sensor/Forms.png" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/apps/Health Sensor/Forms.png" data-lightbox="image-1" data-title="Caption"><i
-                        class="fa fa-search"></i></a>
-                    <h4>Backend for Health Sensor app</h4>
-                    <span>Backend for Health Sensor app</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="isotope-item" data-type="web">
-                <figure class="snip1321">
-                  <img src="assets/images/apps/Streamer Backend/Playlist Form.png" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/apps/Streamer Backend/Playlist Form.png" data-lightbox="image-1"
-                      data-title="Backend for Streamer app based on Raspberry Pi"><i class="fa fa-search"></i></a>
-                    <h4>Streamer</h4>
-                    <span>Backend for Streamer app based on Raspberry Pi</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="isotope-item" data-type="android">
-                <figure class="snip1321">
-                  <img src="assets/images/apps/Kitabi/0.jpg" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/apps/Kitabi/0.jpg" data-lightbox="image-1"
-                      data-title="A book reading app geared towards Urdu Language"><i class="fa fa-search"></i></a>
-                    <h4>Kitabi</h4>
-                    <span>A book reading app geared towards Urdu Language</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-
-              <div class="isotope-item" data-type="android">
-                <figure class="snip1321">
-                  <img src="assets/images/apps/Health Sensor App/2.jpg" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/apps/Health Sensor App/2.jpg" data-lightbox="image-1"
-                      data-title="An app for monitoring compulsions in patients"><i class="fa fa-search"></i></a>
-                    <h4>Health Sensor</h4>
-                    <span>An app for monitoring compulsions in patients</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="isotope-item" data-type="ios">
-                <figure class="snip1321">
-                  <img src="assets/images/apps/Easy Urdu iOS/1.webp" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/apps/Easy Urdu iOS/1.webp" data-lightbox="image-1"
-                      data-title="An Urdu keyboard with predictive typing"><i class="fa fa-search"></i></a>
-                    <h4>Easy Urdu iOS</h4>
-                    <span>An Urdu keyboard with predictive typing</span>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="isotope-item" data-type="ios">
-                <figure class="snip1321">
-                  <img src="assets/images/apps/QM iOS/1.webp" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/apps/QM iOS/1.webp" data-lightbox="image-1"
-                      data-title="Developed few modules for this app while working at PDMS"><i
-                        class="fa fa-search"></i></a>
-                    <h4>Quran Majeed iOS</h4>
-                    <span>Developed few modules for this app while working at PDMS</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="isotope-item" data-type="ios">
-                <figure class="snip1321">
-                  <img src="assets/images/apps/MPW/1.png" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/apps/MPW/1.png" data-lightbox="image-1"
-                      data-title="An app to generate problem sets for Grade 1 to 6 based on Common Core Standard"><i
-                        class="fa fa-search"></i></a>
-                    <h4>Math Practice Worksheets</h4>
-                    <span>An app to generate problem sets for Grade 1 to 6 based on Common Core Standard</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="isotope-item" data-type="android">
-                <figure class="snip1321">
-                  <img src="assets/images/apps/Bluepay/0.jpg" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/apps/Bluepay/0.jpg" data-lightbox="image-1"
-                      data-title="A prototype for testing bluetooth based secure transactions"><i
-                        class="fa fa-search"></i></a>
-                    <h4>Bluepay</h4>
-                    <span>A prototype for testing bluetooth based secure transactions</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="isotope-item" data-type="python">
-                <figure class="snip1321">
-                  <img src="assets/images/apps/Python/airline.png" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/apps/Python/airline.png" data-lightbox="image-1"
-                      data-title="A proof of concept for airline delay prediction using 15 million rows of data"><i
-                        class="fa fa-search"></i></a>
-                    <h4>Airline Delay Prediction</h4>
-                    <span>A proof of concept for airline delay prediction using 15 million rows of data</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="isotope-item" data-type="python">
-                <figure class="snip1321">
-                  <img src="assets/images/apps/Python/clustering.png" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/apps/Python/clustering.png" data-lightbox="image-1"
-                      data-title="Classification of medical records using independent knowledge base"><i
-                        class="fa fa-search"></i></a>
-                    <h4>Medical Record Classification</h4>
-                    <span>Classification of medical records using independent knowledge base</span>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-me" data-section="section4">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Contact Me</h2>
-          <div class="line-dec mb-4"></div>
-          <span class="blockquote">Thinking about your next application? May be I can help.<br>Feel free to get in touch.</span>
-        </div>
-        <div class="row">
-
-        </div>
-      </div>
-    </section>
   </div>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/lightbox.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="node_modules/alpinejs/dist/cdn.min.js" defer></script>
+  <script src="node_modules/aos/dist/aos.js"></script>
   <script>
-    //according to loftblog tut
-    $(".main-menu li:first").addClass("active");
-
-    var showSection = function showSection(section, isAnimate) {
-      var direction = section.replace(/#/, ""),
-        reqSection = $(".section").filter(
-          '[data-section="' + direction + '"]'
-        ),
-        reqSectionPos = reqSection.offset().top - 0;
-
-      if (isAnimate) {
-        $("body, html").animate(
-          {
-            scrollTop: reqSectionPos
-          },
-          800
-        );
-      } else {
-        $("body, html").scrollTop(reqSectionPos);
-      }
-    };
-
-    var checkSection = function checkSection() {
-      $(".section").each(function () {
-        var $this = $(this),
-          topEdge = $this.offset().top - 80,
-          bottomEdge = topEdge + $this.height(),
-          wScroll = $(window).scrollTop();
-        if (topEdge < wScroll && bottomEdge > wScroll) {
-          var currentId = $this.data("section"),
-            reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-          reqLink
-            .closest("li")
-            .addClass("active")
-            .siblings()
-            .removeClass("active");
-        }
-      });
-    };
-
-    $(".main-menu").on("click", "a", function (e) {
-      e.preventDefault();
-      showSection($(this).attr("href"), true);
-    });
-
-    $(window).scroll(function () {
-      checkSection();
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init();
     });
   </script>
 </body>
