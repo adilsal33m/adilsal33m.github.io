@@ -12,164 +12,188 @@
 <body class="bg-white text-black font-sans">
 
   <header class="bg-black text-white p-4">
-    <h1 class="text-lg sm:text-3xl font-light text-center uppercase tracking-wider">Muhammad Adil Saleem</h1>
+    <div class="flex flex-col sm:flex-row justify-between max-w-4xl items-center mx-auto">
+      <h1 class="text-lg sm:text-3xl font-light text-center uppercase tracking-wider">Muhammad Adil Saleem</h1>
+      <p class="text-xs font-light tracking-wider uppercase">Last updated: 09-September-24</p>
+    </div>
   </header>
 
-  <div class="max-w-2xl mx-auto mt-6 px-4">
-    <div class="flex-wrap flex text-center w-full space-x-4 mb-6">
-      <button x-on:click="tab = 'academia'"
-        :class="{ 'bg-black text-white': tab === 'academia', 'bg-gray-200': tab !== 'academia' }"
-        class="tab-button py-2 px-4 rounded shadow-md">Academia</button>
-      <button x-on:click="tab = 'professional'"
-        :class="{ 'bg-black text-white': tab === 'professional', 'bg-gray-200': tab !== 'professional' }"
-        class="tab-button py-2 px-4 rounded shadow-md">Professional</button>
-      <button x-on:click="tab = 'projects'"
-        :class="{ 'bg-black text-white': tab === 'projects', 'bg-gray-200': tab !== 'projects' }"
-        class="tab-button py-2 px-4 rounded shadow-md">Projects</button>
-    </div>
+  <div class="max-w-3xl mx-auto mt-6 px-4 flex-row flex justify-between items-center w-full space-x-4 mb-6">
+    <button x-on:click="tab = 'academia'"
+      :class="{ 'bg-black text-white': tab === 'academia', 'bg-gray-200': tab !== 'academia' }"
+      class="tab-button py-2 px-4 rounded shadow-md">Academia</button>
+    <button x-on:click="tab = 'professional'"
+      :class="{ 'bg-black text-white': tab === 'professional', 'bg-gray-200': tab !== 'professional' }"
+      class="tab-button py-2 px-4 rounded shadow-md">Professional</button>
+    <button x-on:click="tab = 'projects'"
+      :class="{ 'bg-black text-white': tab === 'projects', 'bg-gray-200': tab !== 'projects' }"
+      class="tab-button py-2 px-4 rounded shadow-md">Projects</button>
+  </div>
 
-    <div x-show="tab === 'academia'" data-aos="fade-up" class="tab-content" x-transition>
+  <div class="max-w-3xl mx-auto mt-6 px-4">
+    <!-- Academia -->
+    <div x-show="tab === 'academia'" data-aos="fade-down" class="tab-content" x-transition>
       <h2 class="text-2xl font-semibold mb-4 uppercase text-xs tracking-wider">Academic Career</h2>
 
+
       <div class="mb-6">
-        <h3 class="text-xl font-semibold mb-2">Degrees</h3>
-        <ul class="list-disc list-inside">
-          <li>
-            <strong>PhD in Computer Science</strong>, University Name (Year)
-            <ul class="list-disc list-inside pl-4">
-              <li>Research on <em>XYZ</em></li>
-              <li>Advisor: Dr. Name</li>
-              <li>Thesis Title: <em>Title of Thesis</em></li>
-            </ul>
-          </li>
-          <li>
-            <strong>Master's in Data Science</strong>, University Name (Year)
-            <ul class="list-disc list-inside pl-4">
-              <li>Thesis on <em>ABC</em></li>
-              <li>Advisor: Dr. Name</li>
-              <li>Thesis Title: <em>Title of Thesis</em></li>
-            </ul>
-          </li>
-          <li>
-            <strong>Bachelor's in Software Engineering</strong>, University Name (Year)
-          </li>
+        <h3 class="text-xl font-semibold mb-2">Research Interests</h3>
+        <p>My research interests include but are not limited to:</p>
+        <ul class="list-disc list-inside pl-4">
+          <li>Explainable AI (XAI)</li>
+          <li>Natural Language Processing</li>
+          <li>Counterfactual Explanations</li>
+          <li>Reinforcement Learning</li>
         </ul>
       </div>
 
       <div class="mb-6">
-        <h3 class="text-xl font-semibold mb-2">Research Interests</h3>
-        <p>
-          My research interests include but are not limited to:
-        </p>
-        <ul class="list-disc list-inside pl-4">
-          <li>Artificial Intelligence and Machine Learning</li>
-          <li>Data Mining and Predictive Analytics</li>
-          <li>Software Engineering and Development Practices</li>
-          <li>Human-Computer Interaction</li>
+        <h3 class="text-xl font-semibold mb-2">Degrees</h3>
+        <ul class="my-2">
+          <li class="my-2">
+            <strong>PhD in Computer Science </strong><span class="text-xs uppercase tracking-wider">(2021 -
+              Present)</span><br>Institute of Business Administration Karachi
+            <ul class="list-disc list-inside pl-4">
+              <li>Research on Explainable AI (XAI) with a focus on textual data in the healthcare domain.</li>
+              <li>Advisor: Dr. Sajjad Haider</li>
+            </ul>
+          </li>
+          <li class="my-2">
+            <strong>MS in Computer Science </strong><span class="text-xs uppercase tracking-wider">(2016 -
+              2018)</span><br>Institute of Business Administration Karachi
+            <ul class="list-disc list-inside pl-4">
+              <li>Research Survey on Differential Privacy</li>
+              <li>Advisor: Dr. Muhammad Sarim</li>
+              <li>Graduated with a CGPA of 3.71, secured 2nd position in the program.</li>
+            </ul>
+          </li>
+          <li class="my-2">
+            <strong>MSc in Applied Physics </strong><span
+              class="text-xs uppercase tracking-wider">(2014)</span><br>University of Karachi
+            <ul class="list-disc list-inside pl-4">
+              <li>Secured 2nd position with a percentage of 76%.</li>
+            </ul>
+          </li>
+          <li class="my-2">
+            <strong>BSc (Hons) in Faculty Science </strong><span class="text-xs uppercase tracking-wider">(2011 -
+              2013)</span><br>University of Karachi
+            <ul class="list-disc list-inside pl-4">
+              <li>Secured 2nd position with a percentage of 75%.</li>
+            </ul>
+          </li>
         </ul>
       </div>
 
       <div class="mb-6">
         <h3 class="text-xl font-semibold mb-2">Publications</h3>
-        <ul class="list-disc list-inside pl-4">
-          <li><a href="URL-to-publication" class="text-blue-500">Title of Publication</a> - Journal/Conference Name
-            (Year)</li>
-          <li><a href="URL-to-publication" class="text-blue-500">Title of Publication</a> - Journal/Conference Name
-            (Year)</li>
-          <!-- Add more publications as needed -->
-        </ul>
-      </div>
-
-      <div class="mb-6">
-        <h3 class="text-xl font-semibold mb-2">Conferences and Workshops</h3>
-        <ul class="list-disc list-inside pl-4">
-          <li>Presented at <strong>Conference Name</strong> (Year) - <em>Title of Presentation</em></li>
-          <li>Attended <strong>Workshop Name</strong> (Year) - <em>Workshop Focus</em></li>
-          <!-- Add more conferences and workshops as needed -->
+        <ul class="my-2">
+          <li><strong>Network and Spatial Economics (2023)</strong><br><a
+              href="https://link.springer.com/article/10.1007/s11067-023-09587-y" class="text-blue-500">World City
+              Networks and Multinational Firms: An Analysis of Economic Ties Over a Decade</a></li>
         </ul>
       </div>
 
       <div class="mb-6">
         <h3 class="text-xl font-semibold mb-2">Awards and Honors</h3>
-        <ul class="list-disc list-inside pl-4">
-          <li><strong>Award Name</strong> (Year) - Description of the award or honor.</li>
-          <li><strong>Scholarship Name</strong> (Year) - Description of the scholarship or honor.</li>
-          <!-- Add more awards and honors as needed -->
+        <ul class="my-2">
+          <li class="my-2"><strong>2nd Position</strong> (MS in Computer Science, Institute of Business Administration
+            Karachi, 2018)
+          </li>
+          <li class="my-2"><strong>2nd Position</strong> (MSc in Applied Physics, University of Karachi, 2014)</li>
+          <li class="my-2"><strong>2nd Position</strong> (BSc (Hons), University of Karachi, 2013)</li>
         </ul>
       </div>
 
       <div class="mb-6">
         <h3 class="text-xl font-semibold mb-2">Teaching Experience</h3>
-        <ul class="list-disc list-inside pl-4">
-          <li><strong>Course Name</strong>, University Name (Year) - Role (e.g., Teaching Assistant, Lecturer)</li>
-          <li><strong>Course Name</strong>, University Name (Year) - Role (e.g., Teaching Assistant, Lecturer)</li>
-          <!-- Add more teaching experience as needed -->
+        <ul>
+          <li class="my-2"><strong>Core and Elective Computer Science Courses</strong><br>Institute of Business
+            Administration
+            <br>(2021 -
+            Present)
+          </li>
+          <li class="my-2"><strong>Lab Courses for Advanced Telecommunications and Industrial Electronics</strong><br>
+            University of
+            Karachi<br>(2016 - 2017)</li>
         </ul>
       </div>
 
       <div class="mb-6">
         <h3 class="text-xl font-semibold mb-2">Professional Development</h3>
-        <ul class="list-disc list-inside pl-4">
-          <li>Completed <strong>Certification Name</strong> (Year) - Description of the certification.</li>
-          <li>Participated in <strong>Training Program</strong> (Year) - Description of the program.</li>
-          <!-- Add more professional development activities as needed -->
+        <ul>
+          <li>Published a beginner’s web development course on <a
+              href="https://www.udemy.com/course/just-enough-laravel/" class="text-blue-500">Udemy</a> with over 29,000
+            students <br>(4.2 out of 5 stars)</li>
         </ul>
       </div>
     </div>
 
 
-    <div x-show="tab === 'professional'" data-aos="fade-up" class="tab-content" x-transition>
+
+    <!-- Professional Career -->
+    <div x-show="tab === 'professional'" class="tab-content" x-transition>
       <h2 class="text-2xl font-semibold mb-4 uppercase text-xs tracking-wider">Professional Career</h2>
       <ul class="list-none list-inside">
-        <li class="my-4">
+        <li class="my-4" data-aos="fade-down">
           <div class="font-bold">Freelancer</div>
           <div class="font-semibold text-xs uppercase tracking-wider">Aug 2021 – Present</div>
-          <p>Developed various software solutions for clients.</p>
+          <ul class="list-disc list-inside my-2">
+            <li>Developed various software solutions, including web, mobile, IoT, and AI/ML applications.</li>
+            <li>Served clients across diverse industries such as service providers, manufacturers, and educational
+              institutions.</li>
+            <li>Utilized a wide range of technologies and tools, including Laravel, Python, MySQL, SQLite, TailwindCSS,
+              Alpine.js, Livewire, Swift, and Android.</li>
+            <li>Worked on projects that involved both frontend and backend development, database management, and
+              integration with IoT devices and AI/ML models.</li>
+            <li>Consistently delivered high-quality software solutions tailored to the specific needs of clients,
+              resulting in increased efficiency, improved user experience, and enhanced business performance.</li>
+          </ul>
         </li>
-        <li class="my-4">
+
+        <li class="my-4" data-aos="fade-down" data-aos-delay="25">
           <div class="font-bold">Pakistan Data Management Services</div>
           <div class="font-semibold">iOS Developer</div>
           <div class="text-xs uppercase tracking-wider">Aug 2020 – Jul 2021</div>
-          <ul>
+          <ul class="list-disc list-inside my-2">
             <li>Developed high-quality iOS applications using Swift.</li>
             <li>Collaborated with cross-functional teams to design, develop, and deploy new features.</li>
             <li>Ensured application bug-free status and compatibility with latest iOS versions.</li>
           </ul>
         </li>
-        <li class="my-4">
+        <li class="my-4" data-aos="fade-down" data-aos-delay="50">
           <div class="font-bold">Unilever Pakistan</div>
           <div class="font-semibold">IT Business Partner</div>
           <div class="text-xs uppercase tracking-wider">Apr 2019 – Jul 2020</div>
-          <ul>
+          <ul class="list-disc list-inside my-2">
             <li>Provided technical expertise and support to HR and Supply Chain teams.</li>
             <li>Developed and implemented IT solutions aligned with business objectives.</li>
             <li>Ensured optimal functioning of existing business applications.</li>
           </ul>
         </li>
-        <li class="my-4">
+        <li class="my-4" data-aos="fade-down" data-aos-delay="75">
           <div class="font-bold">Pakistan Data Management Services</div>
           <div class="font-semibold">Mobile App Developer</div>
           <div class="text-xs uppercase tracking-wider">Nov 2017 – Mar 2019</div>
-          <ul>
+          <ul class="list-disc list-inside my-2">
             <li>Developed and maintained Android applications using Java.</li>
             <li>Collaborated with cross-functional teams for design, development, and deployment.</li>
             <li>Optimized applications for performance and user experience.</li>
           </ul>
         </li>
-        <li class="my-4">
+        <li class="my-4" data-aos="fade-down" data-aos-delay="100">
           <div class="font-bold">University of Karachi</div>
           <div class="font-semibold">Co-operative Teacher</div>
           <div class="text-xs uppercase tracking-wider">Aug 2016 – Jul 2017</div>
-          <ul>
+          <ul class="list-disc list-inside my-2">
             <li>Taught lab courses for Advanced Telecommunications and Industrial Electronics.</li>
             <li>Provided feedback to students to enhance subject understanding.</li>
           </ul>
         </li>
-        <li class="my-4">
+        <li class="my-4" data-aos="fade-down" data-aos-delay="125">
           <div class="font-bold">SGS Pakistan</div>
           <div class="font-semibold">Co-operative Teacher</div>
           <div class="text-xs uppercase tracking-wider">May 2015 – Apr 2016</div>
-          <ul>
+          <ul class="list-disc list-inside my-2">
             <li>Ensured compliance with regulatory and industry standards in oil, gas, and power generation sectors.
             </li>
             <li>Conducted inspections and tests using non-destructive testing methods.</li>
@@ -178,7 +202,8 @@
       </ul>
     </div>
 
-    <div x-show="tab === 'projects'" data-aos="fade-up" class="tab-content" x-transition>
+    <!-- Projects -->
+    <div x-show="tab === 'projects'" data-aos="fade-down" class="tab-content" x-transition>
       <h2 class="text-2xl font-semibold mb-4 uppercase text-xs tracking-wider">Personal/Work Projects</h2>
       <ul class="list-none list-inside">
         <!-- Web Projects -->
@@ -253,7 +278,9 @@
   <script src="node_modules/aos/dist/aos.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      AOS.init();
+      AOS.init({
+        once: true
+      });
     });
   </script>
 </body>
