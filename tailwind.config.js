@@ -5,7 +5,12 @@ module.exports = {
     "./*.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+
+    },
+    fontFamily: {
+      "body": "'Roboto Slab'"
+    }
   },
   plugins: [],
 }
