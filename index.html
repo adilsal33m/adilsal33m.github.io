@@ -28,7 +28,7 @@
     </div>
   </header>
 
-  <div class="max-w-4xl mx-auto flex flex-col tracking wider text-justify  gap-4 py-6">
+  <div class="max-w-4xl mx-auto flex flex-col tracking wider text-justify gap-4 py-6 px-4">
     <div>
       I'm Muhammad Adil Saleem, a PhD candidate in Computer Science at the Institute of Business Administration,
       Karachi.
@@ -161,8 +161,6 @@
       </div>
     </div>
 
-
-
     <!-- Professional Career -->
     <div x-show="tab === 'professional'" class="tab-content" x-transition>
       <h2 class="text-2xl font-semibold mb-4 uppercase text-xs tracking-wider">Professional Career</h2>
@@ -236,71 +234,267 @@
     </div>
 
     <!-- Projects -->
-    <div x-show="tab === 'projects'" data-aos="fade-down" class="tab-content" x-transition>
+    <div x-show="tab === 'projects'" data-aos="fade-down" class="tab-content px-4" x-transition>
       <h2 class="text-2xl font-semibold mb-4 uppercase text-xs tracking-wider">Personal/Work Projects</h2>
-      <ul class="list-none list-inside">
-        <!-- Web Projects -->
-        <li class="my-4">
-          <div class="font-bold text-lg">Web Projects</div>
-          <ul class="list-disc list-inside ml-6">
-            <li class="font-semibold">
-              <span class="text-blue-500">Project Title 1</span>
-              - A web application for managing personal tasks with real-time collaboration features.
-            </li>
-            <li class="font-semibold">
-              <span class="text-blue-500">Project Title 2</span>
-              - An e-commerce website with integrated payment gateways and user authentication.
-            </li>
-            <!-- Add more web projects here -->
-          </ul>
+      <div>
+        <img class="object-contain rounded shadow-md" src="/images/github-contributions-2024.png" alt="">
+        <img class="object-contain rounded shadow-md" src="/images/github-contributions-2023.png" alt="">
+      </div>
+      <ul class="list-disc py-8">
+        <h2 class="text-xs uppercase font-semibold tracking-wider my-2">Timeline</h2>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">September 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <a class="hover:opacity-80 transition flex flex-row items-center gap-2"
+              href="https://letsurvey.salshasoft.com">
+              <img src="https://letsurvey.salshasoft.com/images/logo.jpeg" class="h-12 rounded" alt="">
+              <h3 class="font-semibold">Let Survey</h3>
+            </a>
+            <div class="flex flex-wrap gap-2 py-2">
+              <span class="bg-sky-400 text-white text-xs rounded-full px-2 py-2">Personal</span>
+              <span class="bg-red-400 text-white text-xs rounded-full px-2 py-2">Web App</span>
+            </div>
+            <ul class="list-disc ml-8">
+              <li>a simple app for students to conduct survey with large question base</li>
+              <li>create question bases with > 10K questions</li>
+              <li>create surveys with random question with max repetitions</li>
+              <li>built using laravel with livewire, alpinejs, mysql and tailwindcss</li>
+            </ul>
+          </div>
         </li>
-
-        <!-- AI/ML Projects -->
-        <li class="my-4">
-          <div class="font-bold text-lg">AI/ML Projects</div>
-          <ul class="list-disc list-inside ml-6">
-            <li class="font-semibold">
-              <span class="text-green-500">Project Title 1</span>
-              - A machine learning model for predicting stock prices using historical data.
-            </li>
-            <li class="font-semibold">
-              <span class="text-green-500">Project Title 2</span>
-              - An image classification tool using deep learning algorithms for medical diagnostics.
-            </li>
-            <!-- Add more AI/ML projects here -->
-          </ul>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <a class="hover:opacity-80 transition flex flex-row items-center gap-2"
+              href="https://grocready.salshasoft.com">
+              <img src="https://grocready.salshasoft.com/images/logo.png" class="h-12 rounded" alt="">
+              <h3 class="font-semibold">GrocReady</h3>
+            </a>
+            <div class="flex flex-wrap gap-2 py-2">
+              <span class="bg-sky-400 text-white text-xs rounded-full px-2 py-2">Personal</span>
+              <span class="bg-red-400 text-white text-xs rounded-full px-2 py-2">Web App</span>
+              <span class="bg-lime-400 text-white text-xs rounded-full px-2 py-2">Android</span>
+              <span class="bg-black text-white text-xs rounded-full px-2 py-2">iOS</span>
+            </div>
+            <ul class="list-disc ml-8">
+              <li>software as a service to notify customers when their order is ready.</li>
+              <li>near real-time notifications</li>
+              <li>geolocation-based store search</li>
+              <li>audio recording based orders</li>
+              <li>peer to peer user/store verification system</li>
+              <li>built using laravel with livewire, alpinejs, mysql and tailwindcss</li>
+            </ul>
+          </div>
         </li>
-
-        <!-- Mobile Projects -->
-        <li class="my-4">
-          <div class="font-bold text-lg">Mobile Projects</div>
-          <ul class="list-disc list-inside ml-6">
-            <li class="font-semibold">
-              <span class="text-red-500">Project Title 1</span>
-              - A fitness tracking app with integration to various health data sources.
-            </li>
-            <li class="font-semibold">
-              <span class="text-red-500">Project Title 2</span>
-              - A travel itinerary app with offline support and customizable travel plans.
-            </li>
-            <!-- Add more mobile projects here -->
-          </ul>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">FurniTrack</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
         </li>
-
-        <!-- IoT Projects -->
-        <li class="my-4">
-          <div class="font-bold text-lg">IoT Projects</div>
-          <ul class="list-disc list-inside ml-6">
-            <li class="font-semibold">
-              <span class="text-purple-500">Project Title 1</span>
-              - A smart home system for controlling appliances remotely via a mobile app.
-            </li>
-            <li class="font-semibold">
-              <span class="text-purple-500">Project Title 2</span>
-              - An IoT-based environmental monitoring system with real-time data visualization.
-            </li>
-            <!-- Add more IoT projects here -->
-          </ul>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Seeds School Project</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Logified</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">The TechnoGro</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Laundromat</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">TimeTune Attendance Management System</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Procurement Portal for BSO Services</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">OCD Activity Monitoring System</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Elite Kleaners</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Invoice generator</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Transport Inbound Portal for Unilever Pakistan</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Purchase Order Management System</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Event Hall Booking System</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Account Receivable System</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Zipcodes Philippines</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Justifiable Treatment Recommendation</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Distributor Management System for Yamaha Pakistan</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Army Combat Fitness Test Calculator</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Camera Dashboard</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Cleaning Schedule Manager for The Future Power</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Preferential Counterfactual Explanations</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Sigmolabs</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Testing System</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Tasbeeh for Mobile</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Kinnow Photo Editor</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">XAI for Health Applications</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Streamer</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">D3 Covid Dashboard</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">Descriptive Checker</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">BluePay</h3>
+            <p>This is a very detailed description of my project</p>
+          </div>
         </li>
       </ul>
     </div>
