@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{ tab: 'academia' }" x-cloak>
+<html lang="en" x-data="{ tab: 'projects' }" x-cloak>
 
 <head>
   <meta charset="UTF-8">
@@ -63,7 +63,7 @@
       class="tab-button py-2 px-4 rounded shadow-md">Projects</button>
   </div>
 
-  <div class="max-w-3xl mx-auto mt-6 px-4">
+  <div class="max-w-3xl mx-auto mt-6 px-4 mb-32">
     <!-- Academia -->
     <div x-show="tab === 'academia'" data-aos="fade-down" class="tab-content" x-transition>
       <h2 class="text-2xl font-semibold mb-4 uppercase text-xs tracking-wider">Academic Career</h2>
@@ -248,7 +248,9 @@
             <a class="hover:opacity-80 transition flex flex-row items-center gap-2"
               href="https://letsurvey.salshasoft.com">
               <img src="https://letsurvey.salshasoft.com/images/logo.jpeg" class="h-12 rounded" alt="">
-              <h3 class="font-semibold">Let Survey</h3>
+              <h3 class="font-semibold">Let Survey
+                <span class="text-xs uppercase rounded p-1 bg-rose-300">Beta</span>
+              </h3>
             </a>
             <div class="flex flex-wrap gap-2 py-2">
               <span class="bg-sky-400 text-white text-xs rounded-full px-2 py-2">Personal</span>
@@ -268,7 +270,9 @@
             <a class="hover:opacity-80 transition flex flex-row items-center gap-2"
               href="https://grocready.salshasoft.com">
               <img src="https://grocready.salshasoft.com/images/logo.png" class="h-12 rounded" alt="">
-              <h3 class="font-semibold">GrocReady</h3>
+              <h3 class="font-semibold">GrocReady
+                <span class="text-xs uppercase rounded p-1 bg-rose-300">Beta</span>
+              </h3>
             </a>
             <div class="flex flex-wrap gap-2 py-2">
               <span class="bg-sky-400 text-white text-xs rounded-full px-2 py-2">Personal</span>
@@ -287,17 +291,53 @@
           </div>
         </li>
         <li>
-          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <p class="text-xs uppercase font-light tracking-wider">May 2024</p>
           <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
-            <h3 class="font-semibold">FurniTrack</h3>
-            <p>This is a very detailed description of my project</p>
+            <a class="hover:opacity-80 transition flex flex-row items-center gap-2"
+              href="https://furnitrack.salshasoft.com">
+              <img src="https://furnitrack.salshasoft.com/images/logo.png" class="h-12 rounded" alt="Furnitrack Logo">
+              <h3 class="font-semibold">Furnitrack
+                <span class="text-xs uppercase rounded p-1 bg-emerald-500 text-white">LIVE</span>
+              </h3>
+            </a>
+            <div class="flex flex-wrap gap-2 py-2">
+              <span class="bg-indigo-400 text-white text-xs rounded-full px-2 py-2">Work</span>
+              <span class="bg-red-400 text-white text-xs rounded-full px-2 py-2">Web App</span>
+              <span class="bg-lime-400 text-white text-xs rounded-full px-2 py-2">Android</span>
+            </div>
+            <ul class="list-disc ml-8">
+              <li>mobile-first inventory management system for furniture stores.</li>
+              <li>stock management with strict/non-strict modes</li>
+              <li>invoicing capabilities for streamlined transactions.</li>
+              <li>reporting features to generate insightful analytics.</li>
+              <li>developed using Laravel with Livewire, Alpine.js, MySQL, and TailwindCSS.</li>
+            </ul>
           </div>
         </li>
         <li>
-          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <p class="text-xs uppercase font-light tracking-wider">Feb 2024</p>
           <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
-            <h3 class="font-semibold">Seeds School Project</h3>
-            <p>This is a very detailed description of my project</p>
+            <a class="hover:opacity-80 transition flex flex-row items-center gap-2" href="https://seeds.edu.pk">
+              <img src="https://seeds.edu.pk/images/logo.png" class="h-12 rounded" alt="Seeds School Logo">
+              <h3 class="font-semibold">School Management System for Seeds School
+                <span class="text-xs uppercase rounded p-1 bg-rose-300">Beta</span>
+              </h3>
+            </a>
+            <div class="flex flex-wrap gap-2 py-2">
+              <span class="bg-indigo-400 text-white text-xs rounded-full px-2 py-2">Work</span>
+              <span class="bg-red-400 text-white text-xs rounded-full px-2 py-2">Web App</span>
+              <span class="bg-lime-400 text-white text-xs rounded-full px-2 py-2">Android</span>
+              <span class="bg-black text-white text-xs rounded-full px-2 py-2">iOS</span>
+            </div>
+            <ul class="list-disc ml-8">
+              <li>Academic session management for organizing school terms.</li>
+              <li>Campus management to oversee multiple school campuses.</li>
+              <li>Academic configurations for customizing academic settings.</li>
+              <li>Fees management with automated reminders for timely payments.</li>
+              <li>Role-Based Access Control (RBAC) for teachers, students, and staff.</li>
+              <li>Multi-level diaries, timetables, and marks recording for comprehensive academic tracking.</li>
+              <li>Developed using Laravel with Livewire, Alpine.js, MySQL, and TailwindCSS.</li>
+            </ul>
           </div>
         </li>
         <li>
@@ -333,6 +373,27 @@
           <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
             <h3 class="font-semibold">Procurement Portal for BSO Services</h3>
             <p>This is a very detailed description of my project</p>
+          </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">Feb 2023</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <a class="hover:opacity-80 transition flex flex-row items-center gap-2" href="https://seeds.edu.pk">
+              <img src="https://seeds.edu.pk/images/logo.png" class="h-12 rounded" alt="Seeds School Logo">
+              <h3 class="font-semibold">Website for the Seeds School
+                <span class="text-xs uppercase rounded p-1 bg-emerald-500 text-white">LIVE</span>
+              </h3>
+            </a>
+            <div class="flex flex-wrap gap-2 py-2">
+              <span class="bg-indigo-400 text-white text-xs rounded-full px-2 py-2">Work</span>
+              <span class="bg-red-400 text-white text-xs rounded-full px-2 py-2">Web</span>
+            </div>
+            <ul class="list-disc ml-8">
+              <li>Standard homepage with gallery, circulars, registration requests, and general information.</li>
+              <li>Notification ticker</li>
+              <li>Backend for dynamic content management</li>
+              <li>Developed using Laravel, MySQL, and TailwindCSS.</li>
+            </ul>
           </div>
         </li>
         <li>
@@ -476,29 +537,87 @@
           </div>
         </li>
         <li>
-          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <p class="text-xs uppercase font-light tracking-wider">April 2021</p>
           <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
-            <h3 class="font-semibold">D3 Covid Dashboard</h3>
-            <p>This is a very detailed description of my project</p>
+            <a class="hover:opacity-80 transition flex flex-row items-center gap-2">
+              <h3 class="font-semibold">D3-Based COVID Dashboard
+                <span class="text-xs uppercase rounded p-1 bg-gray-300">archived</span>
+              </h3>
+            </a>
+            <div class="flex flex-wrap gap-2 py-2">
+              <span class="bg-indigo-400 text-white text-xs rounded-full px-2 py-2">Work</span>
+              <span class="bg-red-400 text-white text-xs rounded-full px-2 py-2">Web App</span>
+            </div>
+            <ul class="list-disc ml-8">
+              <li>Dynamic dashboard for visualizing COVID-19 statistics.</li>
+              <li>Fetches data periodically from GitHub for up-to-date information.</li>
+              <li>Creates beautiful and interactive visuals using the D3.js library.</li>
+              <li>Includes options to filter and sort data for detailed analysis.</li>
+            </ul>
           </div>
         </li>
         <li>
-          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <p class="text-xs uppercase font-light tracking-wider">June 2018</p>
           <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
-            <h3 class="font-semibold">Descriptive Checker</h3>
-            <p>This is a very detailed description of my project</p>
+            <h3 class="font-semibold">Descriptive Checker
+              <span class="text-xs uppercase rounded p-1 bg-gray-300">archived</span>
+            </h3>
+            <div class="flex flex-wrap gap-2 py-2">
+              <span class="bg-indigo-400 text-white text-xs rounded-full px-2 py-2">Work</span>
+              <span class="bg-red-400 text-white text-xs rounded-full px-2 py-2">Web App</span>
+              <span class="bg-amber-400 text-white text-xs rounded-full px-2 py-2">AI/ML</span>
+            </div>
+            <ul class="list-disc ml-8">
+              <li>Proof of concept web app for evaluating descriptive question answers.</li>
+              <li>Uses the RAKE (Rapid Automatic Keyword Extraction) algorithm for evaluation.</li>
+              <li>Developed using PHP with Firebase as the database.</li>
+            </ul>
           </div>
         </li>
         <li>
-          <p class="text-xs uppercase font-light tracking-wider">August 2024</p>
+          <p class="text-xs uppercase font-light tracking-wider">November 2017</p>
           <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
-            <h3 class="font-semibold">BluePay</h3>
-            <p>This is a very detailed description of my project</p>
+            <a class="hover:opacity-80 transition flex flex-row items-center gap-2" href="">
+              <img
+                src="https://image.winudf.com/v2/image1/Y29tLnBha2RhdGEua2l0YWJpX2ljb25fMTU1NDk4NzAzMV8wMTU/icon.webp?w=106&fakeurl=1&type=.webp"
+                class="h-12 rounded inline" alt="Logo">
+              <h3 class="font-semibold">Kitabi
+                <span class="text-xs uppercase rounded p-1 bg-gray-300">unknown</span>
+              </h3>
+            </a>
+
+            <div class="flex flex-wrap gap-2 py-2">
+              <span class="bg-indigo-400 text-white text-xs rounded-full px-2 py-2">Work</span>
+              <span class="bg-red-400 text-white text-xs rounded-full px-2 py-2">Mobile App</span>
+            </div>
+            <ul class="list-disc ml-8">
+              <li>eBook reader app tailored for Urdu language content.</li>
+              <li>Features a Firebase-based online store for books.</li>
+              <li>Supports multiple themes, fonts, and dynamic resizing.</li>
+              <li>Offers multiple layout options for reading comfort.</li>
+            </ul>
           </div>
+        </li>
+        <li>
+          <p class="text-xs uppercase font-light tracking-wider">June 2017</p>
+          <div class="-ml-4 pl-8 sm:pl-16 border-l-2 border-gray-500 outline-offset-8 py-4">
+            <h3 class="font-semibold">BluePay
+              <span class="text-xs uppercase rounded p-1 bg-gray-300">archived</span>
+            </h3>
+            <div class="flex flex-wrap gap-2 py-2">
+              <span class="bg-indigo-400 text-white text-xs rounded-full px-2 py-2">Work</span>
+              <span class="bg-red-400 text-white text-xs rounded-full px-2 py-2">Android</span>
+            </div>
+            <ul class="list-disc ml-8">
+              <li>Android app proof of concept for Bluetooth-based peer-to-peer transactions.</li>
+              <li>Developed using Java and PHP with Firebase as the database.</li>
+              <li>Features facial recognition for secure sign-in.</li>
+            </ul>
+          </div>
+
         </li>
       </ul>
     </div>
-
   </div>
 
   <script src="/node_modules/alpinejs/dist/cdn.min.js" defer></script>
